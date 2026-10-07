@@ -1,0 +1,15 @@
+ACHADOS INCRÍVEIS — SITE ESTÁTICO PARA GITHUB PAGES
+
+1. Extraia o ZIP e envie todos os arquivos da pasta Achados-Incriveis (incluindo logo.svg e favicon.svg) para a raiz do repositório.
+2. No GitHub: Settings > Pages > Deploy from a branch > main > / (root) > Save.
+3. Configure o grupo e o pixel no arquivo config.js, preservando as aspas.
+   groupUrl: link do grupo WhatsApp.
+   metaPixelId: somente o ID numérico. Sem esse ID, nenhum pixel é carregado.
+4. O evento PageView mede visitas. WhatsAppGroupClick mede cliques no botão, NÃO entradas confirmadas no grupo.
+5. As notificações são demonstrações identificadas, uma a cada 7 segundos, visíveis por 4,5 segundos. Para desativar: demoNotifications: false.
+   A página estática não tem acesso às entradas reais do WhatsApp.
+6. Para mostrar depoimentos, adicione apenas relatos reais e autorizados em testimonials, no formato indicado no config.js. Sem relatos, a seção fica oculta.
+7. Não há contadores falsos de vagas. O bloco da referência foi mantido como convite para participar.
+8. O botão informa que o grupo estará disponível em breve até receber o link.
+
+Não é necessário instalar nada ou executar um build. Pode abrir index.html para conferir.
