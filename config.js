@@ -1,6 +1,6 @@
 // Edite somente os valores abaixo. Não coloque senhas ou tokens neste arquivo.
 window.ACHADOS_CONFIG = {
-  groupUrl: '', // Cole aqui o link https://chat.whatsapp.com/...
+  groupUrl: 'https://chat.whatsapp.com/GLKT8lJ5ffzB2YduMmtx8C?mode=gi_t', // Cole aqui o link https://chat.whatsapp.com/...
   metaPixelId: '1652984659491274', // Cole aqui somente os números do ID do pixel.
   demoNotifications: true, // Demonstrações identificadas, sem alegar entradas reais.
   notificationIntervalMs: 7000,

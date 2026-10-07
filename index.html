@@ -5,6 +5,7 @@
 <title>Achados Incríveis | Grupo de ofertas</title>
 <meta name="description" content="Achadinhos, promoções e cupons de Shopee, Amazon e Mercado Livre. Entre gratuitamente no grupo Achados Incríveis.">
 <meta name="theme-color" content="#a54f33">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
 <script src="config.js" defer></script><script src="script.js" defer></script>
 </head>
@@ -20,8 +21,8 @@
 <a class="cta" href="#" data-group><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.4-4.8A8.5 8.5 0 1 1 20.5 11.6Z"/><path d="M8 7.5c.5 4 3 6.5 7 7l1-2-2-1-.9 1c-1.5-.6-2.6-1.7-3.2-3.2l1-.8-1-2Z"/></svg>ENTRAR NO GRUPO</a>
 <p class="micro">Acesso gratuito • Ofertas e cupons • Links diretos</p>
 <p id="group-status" class="status" role="status" hidden></p>
-<div class="availability"><div class="availability-heading"><strong>Seu próximo achado começa aqui</strong><span>GRÁTIS</span></div><div class="decorative-line"></div><p>Entre no grupo e acompanhe as oportunidades</p></div>
-<div class="stats"><div><b>GRÁTIS</b><span>Para participar</span></div><div><b>VIP</b><span>Grupo de ofertas</span></div><div><b>CUPONS</b><span>Para economizar</span></div></div>
+<div class="availability"><div class="availability-heading"><strong>Vagas preenchidas hoje</strong><span id="capacity-percent">—</span></div><div class="capacity-track"><div id="capacity-fill"></div></div><p>⚡ Restam <span id="capacity-remaining">—</span> vagas hoje</p><small class="demo-capacity">Demonstração visual · disponibilidade não verificada</small></div>
+<div class="stats"><div><b id="remaining-card">—</b><span>Vagas restantes</span></div><div><b>VIP</b><span>Grupo oficial</span></div><div><b>REAL</b><span>Cupons do dia</span></div></div>
 </section>
 <section class="benefits" aria-labelledby="benefits-title"><h2 id="benefits-title">O que chega no grupo?</h2>
 <article class="benefit"><div class="icon" aria-hidden="true">🛍️</div><div><h3>Achadinhos úteis</h3><p>Produtos para casa, rotina, moda e utilidades que valem a pena conhecer.</p></div></article>
@@ -30,8 +31,9 @@
 <article class="benefit"><div class="icon" aria-hidden="true">🎟️</div><div><h3>Cupons e descontos</h3><p>Oportunidades para economizar sem perder tempo procurando.</p></div></article>
 </section>
 <section class="testimonials" id="testimonials" hidden><h2>Quem entrou já economizou</h2><div class="reviews" id="reviews"></div></section>
-<footer><p>Achados Incríveis</p><div><button data-policy="terms">Termos de uso</button><span>•</span><button data-policy="privacy">Privacidade</button></div><small>Preços, cupons e disponibilidade podem mudar nas lojas.</small></footer>
+<footer><p>Achados Incríveis</p><div><button data-policy="terms">Termos de uso</button><span>•</span><button data-policy="privacy">Privacidade</button></div><small>Ofertas válidas enquanto estiverem disponíveis nas lojas.</small></footer>
 </main>
 <aside class="toast" id="toast" hidden aria-label="Demonstração de notificação"><img src="logo.svg" alt="" width="40" height="40"><div><strong id="toast-name"></strong><span>acabou de entrar no grupo</span><small>Demonstração · não é uma entrada real</small></div><button id="dismiss-toast" aria-label="Fechar notificação">×</button></aside>
+<dialog id="offer-dialog" class="offer-dialog" aria-labelledby="offer-title"><button class="close-dialog" id="close-offer" aria-label="Fechar convite">×</button><img src="logo.svg" alt="Achados Incríveis" width="100" height="100"><span class="popup-badge">SEU PRÓXIMO ACHADO ESTÁ AQUI</span><h2 id="offer-title">Comece a receber as melhores ofertas agora e <em>economize tempo e dinheiro!</em></h2><a class="cta" href="#" data-group>ENTRAR NO GRUPO</a><p class="popup-note">Participação gratuita no WhatsApp</p></dialog>
 <dialog id="policy-dialog"><button class="close-dialog" aria-label="Fechar">×</button><h2 id="policy-title"></h2><p id="policy-text"></p></dialog>
 </body></html>
