@@ -11,7 +11,7 @@ document.querySelectorAll('[data-group]').forEach(a=>{
   if(groupUrl){a.href=groupUrl;a.target='_blank';a.rel='noopener noreferrer';}
   a.addEventListener('click',e=>{
     if(!groupUrl){e.preventDefault();const s=document.getElementById('group-status');s.textContent='O grupo estará disponível em breve. Volte para conferir!';s.hidden=false;if(offerDialog.open)offerDialog.close();s.scrollIntoView({behavior:'smooth',block:'center'});return;}
-    if(window.fbq)window.fbq('trackCustom','WhatsAppGroupClick');
+    if(window.fbq)window.fbq('trackCustom','WhatsAppGroupClick',{button_location:a.closest('#offer-dialog')?'popup':'pagina',content_name:'Achados Incríveis',destination:'WhatsApp'});
   });
 });
 const section=document.getElementById('testimonials');
